@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+main {
+  background-image: url(./background-image.png);
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: center;
+  width: 100%;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 50px;
+  padding-bottom: 50px;
   color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+.main-body {
+  width: 50%;
+  min-width: 350px;
+  max-width: 700px;
+  margin: auto;
+}
+.card {
+  padding: 20px 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 8px black;
 }
 
-.App-link {
-  color: #61dafb;
+h2, h1 {
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search {
+  text-align: center;
+  background-color: rgba(14, 9, 183);
+}
+
+input {
+  text-align: center;
+  width: 70%;
+}
+
+.definition {
+  text-align: center;
+  background-color: rgba(58, 12, 163);
+}
+
+h5 {
+  font-weight: bold;
+  margin-top: 1.5em;
+}
+
+.definition p, i {
+  font-size: 1.2em;
+  line-height: 1.1em;
+}
+
+.synonym-card {
+  text-align: center;
+  background-color: rgba(67, 97, 238);
+}
+.synonyms {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow: hidden;
+  font-size: 1.2em;
 }
